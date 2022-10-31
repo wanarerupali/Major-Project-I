@@ -2,8 +2,9 @@ import random
 
 def getMood() :
     data = []
-    with open('D:\\Projects\\Major Project I\\Dataset\\train.txt.','r') as f:
+    with open('C:\\Users\\meghapatil\\Major-Project-I\\Dataset\\train.txt.','r') as f:
        line = f.readlines()
+    #    print(line)
        for i in line :
            data.append(i.split(';'))
             
@@ -22,3 +23,4 @@ def getMood() :
 
 """for i in range(1) :
     getMood()"""
+# getMood()

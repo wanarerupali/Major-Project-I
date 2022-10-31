@@ -17,7 +17,8 @@ root = Tk()
 root.geometry('300x400')
 root.configure(background=bac)
 root.title('music recommender UI')
-root.iconbitmap(r'D:\Projects\Major Project I\Code\ICON\apple-music.ico')
+root.iconbitmap(r'C://Users//meghapatil//Major-Project-I//Code//ICON//apple-music.ico')
+
 root.attributes('-alpha',0.8)
 # root.wm_attributes("-topmost", True)
 # root.wm_attributes("-disabled", True)
@@ -58,7 +59,8 @@ def default() :
 
 #   song
 def song(num) :
-    song = ["D://Projects//Major Project I//Dataset//Song//kesariya.mp3","D://Projects//Major Project I//Dataset//Song//Mast Magan.mp3"] 
+    song = ["C://Users//meghapatil//Major-Project-I//Dataset//Song//kesariya.mp3","C://Users//meghapatil//Major-Project-I//Dataset//Song//Mast Magan.mp3"]
+    # C://Users//meghapatil//Major-Project-I//Dataset//Song//kesariya.mp3 
     return song[num]
 
 
@@ -106,10 +108,11 @@ def main() :
     global pauseButton, playButton,forwardButton, playBackground,pauseBackground,forwardBackground,backwardBackground,backButton
 
     # button background 
-    playBackground = PhotoImage(file='D:\Projects\Major Project I\Code\ICON\play.png')
-    pauseBackground = PhotoImage(file='D:\Projects\Major Project I\Code\ICON\pause.png')
-    forwardBackground = PhotoImage(file='D:\Projects\Major Project I\Code\ICON\\forward.png')
-    backwardBackground = PhotoImage(file='D:\Projects\Major Project I\Code\ICON\\backward.png')
+    playBackground = PhotoImage(file='C://Users//meghapatil//Major-Project-I//Code//ICON//play.png')
+    # C:\Users\meghapatil\Major-Project-I\Code\ICON\backward.png
+    pauseBackground = PhotoImage(file='C://Users//meghapatil//Major-Project-I//Code//ICON//pause.png')
+    forwardBackground = PhotoImage(file='C://Users//meghapatil//Major-Project-I//Code//ICON//forward.png')
+    backwardBackground = PhotoImage(file='C://Users//meghapatil//Major-Project-I//Code//ICON//backward.png')
     
     backButton = Button(label_image,image=backwardBackground,command= revert,bg=bac,borderwidth= 0.1,width= 30,fg= 'white')
     # pause_button.pack(padx= 10,pady= 30, anchor=CENTER)
